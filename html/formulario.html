@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Membros de POLARIS - FORMA��O T�CNICA E PROFISSIONAL - 9900248272 - 0030 - 05918</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">81;#Membros de POLARIS - FORMA��O T�CNICA E PROFISSIONAL - 9900248272 - 0030 - 05918</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <header><h1>Cadastro de Pessoas</h1></header>
+    <nav>
+        <ul>
+            <li><a href="formulario.html">Contato</a></li>
+            <li><a href="localizacao.html">localização</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <form action="gravar.php" method="post">
+        <label>Nome</label><br>
+        <input type="text" name="txtNome"><br>
+        <label>Data de Nascimento</label><br>
+        <input type="date" name="datanasc"><br>
+        <label>Estado Civil</label><br>
+        <input type="radio" value="s"  name="estcivil">Solteiro(a)
+        <input type="radio" value="c"  name="estcivil">Casado(a)
+        <input type="radio" value="d"  name="estcivil">Divorciado(a)
+        <input type="radio" value="v"  name="estcivil">Viúvo(a)
+        <input type="radio" value="ue" name="estcivil">União Estavel
+        <br>
+        <label>Escolha a área de interesse</label><br>
+        <input type="checkbox" name="ae" value="chs">Ciências Humanas 
+        <input type="checkbox" name="ae" value="cn">Ciências da Natureza 
+        <input type="checkbox" name="ae" value="mat">Matemática 
+        <input type="checkbox" name="ae" value="port">Lingua Portuguesa 
+        <br>
+        <label>qual sua cor favorita</label><br>
+        <input type="color" name="txtCor"><br>
+        <label>email</label><br>
+        <input type="email" name="txtemail"><br>
+        <label>Senha</label><br>
+        <input type="password" name="txtsenha"><br>
+        <label>Telefone</label><br>
+        <input type="tel" name="txttelefone"><br>
+        <label>Sugestão</label><br>
+        <textarea name="txtsugest" cols="30" rows="5"></textarea><br>
+        <label>UF</label><br>
+        <select name="txtuf">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+        </select>
+        <br>
+        <label>Selecione uma foto</label><br>
+        <input type="file" name="foto">
+        <br>
+        <label>Selecione a quantidade de itens</label><br>
+        <input type="number" name="txtqtd">
+        <br>
+        <label>Selecione dia e horario da consulta</label><br>
+        <input type="datetime-local" name="txtdatahoraconsulta">
+        <br>
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+
+        <input type="range">
+        <input type="search">
+        <input type="time">
+        <input type="url">                
+        <input type="button" value="Botão Programado">
+        <br>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="OK">
+    </form>
+    
+    <footer></footer>
+</body>
+</html>

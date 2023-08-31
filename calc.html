@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="main.js"></script>
+    <nav>
+        <li>
+            <ul><a href="index.html">HOME</a></ul>
+            <ul><a href="calc.html">CALCULADORA</a></ul>
+            <ul><a href="test.html">TESTES</a></ul>
+        </li>
+    </nav>
+
+    <div id="calculadora">
+    
+        <div id="numeros">    
+            <label for="n1">NUMERO 1</label> <br>
+            <input type="number" id="n1"> <br> <br>
+
+            <label for="n2">NUMERO 2</label> <br>
+            <input type="number" id="n2"> <br> <br>
+       </div>
+
+
+        <div id="buttons">
+            <button onclick="sum();"><img src="images/sum.png" alt="" height="20" width="20"></button>
+            <button onclick="sub();"><img src="images/sub.jpg" alt="" height="20" width="20"></button>
+            <button onclick="mult();"><img src="images/mult.png" alt="" height="20" width="20"></button>
+            <button onclick="division();"><img src="images/divisao.jpg" alt="" height="20" width="20"></button>
+        </div>
+    
+        <div id="resul">
+
+            <p id="res">RESULTADO</p>
+
+        </div>
+
+    </div>
+</body>
+</html>

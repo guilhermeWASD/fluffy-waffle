@@ -1,0 +1,49 @@
+body.home{
+    background-color: bisque;
+}
+
+body {
+    background-color: bisque;
+}
+#calculadora{
+    text-align: center;
+    vertical-align: middle; /*Vertically centered*/
+    text-align: center; /* Horizontally centered */
+}
+
+#resul {
+    background-color: blue;
+    color: white;
+    width: 10%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#buttons {
+    margin-bottom: 2%;
+}
+
+
+#numeros {
+    margin-top: 15%;
+}
+
+#sidebar {
+    width: 25%;
+}
+
+#login-area{
+    vertical-align: middle; /*Vertically centered*/
+    text-align: center; /* Horizontally centered */
+    margin-top: 15%;
+}
+
+#btnlogin {
+    text-decoration: none;
+    color: unset; 
+}
+
+#saudacao {
+    vertical-align: middle; /*Vertically centered*/
+    text-align: center; /* Horizontally centered */
+}
