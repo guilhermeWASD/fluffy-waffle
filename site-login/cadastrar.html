@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" onsubmit="return checkPassword();">
+        <label>Nome</label>
+        <input type="text" name="txtnome"> <br><br>
+        <label>Endereço</label>
+        <input type="text" name="txtendereco"> <br><br>
+        <label>CEP</label>
+        <input type="text" name="txtnome"> <br><br>
+        <label>Telefone</label>
+        <input type="tel" name="txttelefone"> <br><br>
+        <label>Email</label>
+        <input type="email" name="txtemail"> <br><br>
+        <label>Senha</label>
+        <input type="password" id="pass" value=""> <br><br>
+        <label>Digite a senha novamente</label>
+        <input type="password" id="pass1" value="">
+        <p id="aviso"></p>
+
+        <input type="submit" name="signup" value="Enviar" id="submit">
+        <input type="button" value="Cancelar">
+
+        <script>
+            function checkPassword(){
+              var1 = document.getElementById("pass");
+              var2 = document.getElementById("pass1");
+              if(var1.value != var2.value){
+                //   alert("As senhas não são iguais!");
+                var aviso = document.getElementById("aviso");
+                aviso.innerHTML = "As senhas não são iguais!!"
+                  return false;   
+                  }
+                  else{
+                      return true;
+                  }
+              }
+             </script>
+    </form>
+</body>
+</html>
